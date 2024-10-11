@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Bookings | Tourism Agency</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
+        <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Tourism Agency</a>
+        <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-nav">
+            <div class="nav-item text-nowrap">
+                <a class="nav-link px-3" href="#">Sign out</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="dashboard.html">
+                                <span data-feather="file"></span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="places.html">
+                                <span data-feather="file"></span>
+                                Places
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tours.html">
+                                <span data-feather="shopping-cart"></span>
+                                Tours
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="bookings.html">
+                                <span data-feather="layers"></span>
+                                Bookings
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="accomodation.html">
+                                <span data-feather="bar-chart-2"></span>
+                                Accomodation
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="customers.html">
+                                <span data-feather="users"></span>
+                                Customers
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tourists.html">
+                                <span data-feather="users"></span>
+                                Tourists
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div
+                    class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h2>Bookings List</h2>
+                    <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#modalAddTour">
+                        Add Booking
+                    </button>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped table-sm">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Header</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1,001</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                                <td>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="eye"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="edit"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="delete"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1,001</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                                <td>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="eye"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="edit"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="delete"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1,001</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                                <td>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="eye"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="edit"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="delete"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1,001</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                                <td>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="eye"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="edit"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="delete"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1,001</td>
+                                <td>random</td>
+                                <td>data</td>
+                                <td>placeholder</td>
+                                <td>text</td>
+                                <td>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="eye"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="edit"></span>
+                                    </a>
+                                    <a class="nav-link action" href="#">
+                                        <span data-feather="delete"></span>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modalAddTour">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalAddTourTitle">Add Tour</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <div class="bd-example">
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                  </div>
+                  <fieldset class="mb-3">
+                    <legend>Radios buttons</legend>
+                    <div class="form-check">
+                      <input type="radio" name="radios" class="form-check-input" id="exampleRadio1">
+                      <label class="form-check-label" for="exampleRadio1">Default radio</label>
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="radio" name="radios" class="form-check-input" id="exampleRadio2">
+                      <label class="form-check-label" for="exampleRadio2">Another radio</label>
+                    </div>
+                  </fieldset>
+                  <div class="mb-3">
+                    <label class="form-label" for="customFile">Upload</label>
+                    <input type="file" class="form-control" id="customFile">
+                  </div>
+                  <div class="mb-3 form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                    <label class="form-check-label" for="flexSwitchCheckChecked">Checked switch checkbox input</label>
+                  </div>
+                </form>
+                </div>
+              </div>
+
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Add Tour</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js"
+        integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE"
+        crossorigin="anonymous"></script>
+    
+    <script src="dashboard.js"></script>
+</body>
+
+</html>
